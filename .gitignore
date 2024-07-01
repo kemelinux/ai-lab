@@ -1,0 +1,3 @@
+training_checkpoints/
+.ipynb_checkpoints/
+RAG/PDF/data/
