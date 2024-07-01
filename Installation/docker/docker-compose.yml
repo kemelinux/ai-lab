@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  mssql:
+    user: root
+    build: . 
+    environment:
+    - "ACCEPT_EULA=1"
+    - "MSSQL_SA_PASSWORD=YourStrongPassword"
+    ports:
+    - "1433:1433"
+    volumes:
+    - ./data/sql:/var/opt/mssql/data
+     
